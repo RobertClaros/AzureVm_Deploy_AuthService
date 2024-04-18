@@ -119,6 +119,7 @@ router.get('/validated', async (req, res) => {
 
 app.use(router);
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server start at http://localhost:${PORT}`);
 });
+
